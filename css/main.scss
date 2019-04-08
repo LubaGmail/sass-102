@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+ 
+@import './vars';
+@import './header';
+
+.contact {
+    @include flexCenter(row);
+    color: $textColor;
+
+    button {
+        background: $primaryBtn;
+        &::after {
+            content: " after";
+        }
+    }
+}
+
+footer {
+    @extend header;
+    font-size: x-large;
+    width: 100% - 20%;
+}
+
+
+
+
